@@ -130,6 +130,46 @@
             </div>
         </div>
     </div>
+    <div id="intro" style="padding: 20px;">
+        <h1 class="h1 text-center"
+            style="font-family: Calibri; text-transform: uppercase; font-size: 30px; letter-spacing: 2px;">
+            Our&nbsp Restaurant
+        </h1>
+        <hr style="border-color: black; width: 50%;">
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1" style="background-color: #a94442;height: 400px;"></div>
+            <div class="col-md-4 col-md-offset-1 text-center" style="font-size: larger; height: 400px; padding: 80px 0;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
+                eos et eum iure minima nam necessitatibus nisi officiis quasi quibusdam quidem quod, reiciendis
+                reprehenderit saepe sequi soluta. Aperiam consectetur, corporis debitis, deleniti dignissimos error eum
+                in itaque modi, nulla provident qui reiciendis sequi veritatis voluptatum?
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 text-center" style="font-size: larger; height: 400px; padding: 80px 0;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
+                eos et eum iure minima nam necessitatibus nisi officiis quasi quibusdam quidem quod, reiciendis
+                reprehenderit saepe sequi soluta. Aperiam consectetur, corporis debitis, deleniti dignissimos error eum
+                in itaque modi, nulla provident qui reiciendis sequi veritatis voluptatum?
+            </div>
+            <div class="col-md-4 col-md-offset-1" style="background-color: salmon;height: 400px;"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1" style="background-color: palevioletred;height: 400px;"></div>
+            <div class="col-md-4 col-md-offset-1 text-center" style="font-size: larger; height: 400px; padding: 80px 0;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
+                eos et eum iure minima nam necessitatibus nisi officiis quasi quibusdam quidem quod, reiciendis
+                reprehenderit saepe sequi soluta. Aperiam consectetur, corporis debitis, deleniti dignissimos error eum
+                in itaque modi, nulla provident qui reiciendis sequi veritatis voluptatum?
+            </div>
+        </div>
+        <blockquote class="text-center" style="font-size: 20px;margin-top: 30px; font-family: Consolas;">
+           "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        </blockquote>
+    </div>
 </div>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo asset('css/app.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?php echo asset('css/font-awesome.css')?>">
     <style>
         #jumbo {
             background: #606c88; /* fallback for old browsers */
@@ -48,7 +49,7 @@
                 <div class="panel-heading" style="font-size:22px; letter-spacing: 1px; margin: 10px 0;">Make A
                     Reservation
                 </div>
-                <p style="font-size: 15px; letter-spacing: 1px;">
+                <p style="font-size: 14px; letter-spacing: 1px;">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id inventore nesciunt possimus quasi.
                     Alias error hic provident quae quisquam vel voluptatum!
                 </p>
@@ -106,22 +107,12 @@
                 <div style="font-size: 30px;text-transform: uppercase; font-family: Aparajita; letter-spacing: 3px;">
                     About Resto
                 </div>
-                <hr style="width: 80%;">
-                <p style="padding: 30px;font-size: 20px; font-family: Calibri;">
+                <hr style="width: 80%; margin:10px auto;">
+                <p style="padding: 100px;font-size: 20px; font-family: Calibri;">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aut culpa cum delectus
                     doloribus dolorum ducimus error et exercitationem in iure molestias, mollitia natus quidem quod quos
                     ratione reiciendis saepe sint unde velit vitae. Assumenda cupiditate error libero molestias placeat
                     quaerat quis. Alias dolores nobis optio quas quidem quod.
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid blanditiis dicta dignissimos
-                    dolorem ducimus eligendi ex laboriosam, nesciunt quasi quibusdam quod reiciendis sint veritatis,
-                    voluptates! Atque dignissimos dolore ducimus error et expedita explicabo facere illum ipsum magni,
-                    molestiae officia optio, possimus ratione voluptatum.
-                    <br>
-                    Ab adipisci aut earum mollitia non odio
-                    praesentium, quidem quos sunt suscipit.
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, culpa.
                 </p>
                 <button class="btn btn-primary"
                         style="padding:10px 40px; font-size: larger; background-color: #efefef;color: black;border-color: black;border-width:1px; ">
@@ -139,7 +130,8 @@
         <br>
         <div class="row">
             <div class="col-md-4 col-md-offset-1" style="background-color: #a94442;height: 400px;"></div>
-            <div class="col-md-4 col-md-offset-1 text-center" style="font-size: larger; height: 400px; padding: 80px 0;">
+            <div class="col-md-4 col-md-offset-1 text-center"
+                 style="font-size: larger; height: 400px; padding: 80px 0;">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
                 eos et eum iure minima nam necessitatibus nisi officiis quasi quibusdam quidem quod, reiciendis
                 reprehenderit saepe sequi soluta. Aperiam consectetur, corporis debitis, deleniti dignissimos error eum
@@ -148,7 +140,8 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-md-4 col-md-offset-1 text-center" style="font-size: larger; height: 400px; padding: 80px 0;">
+            <div class="col-md-4 col-md-offset-1 text-center"
+                 style="font-size: larger; height: 400px; padding: 80px 0;">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
                 eos et eum iure minima nam necessitatibus nisi officiis quasi quibusdam quidem quod, reiciendis
                 reprehenderit saepe sequi soluta. Aperiam consectetur, corporis debitis, deleniti dignissimos error eum
@@ -159,16 +152,60 @@
         <br>
         <div class="row">
             <div class="col-md-4 col-md-offset-1" style="background-color: palevioletred;height: 400px;"></div>
-            <div class="col-md-4 col-md-offset-1 text-center" style="font-size: larger; height: 400px; padding: 80px 0;">
+            <div class="col-md-4 col-md-offset-1 text-center"
+                 style="font-size: larger; height: 400px; padding: 80px 0;">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
                 eos et eum iure minima nam necessitatibus nisi officiis quasi quibusdam quidem quod, reiciendis
                 reprehenderit saepe sequi soluta. Aperiam consectetur, corporis debitis, deleniti dignissimos error eum
                 in itaque modi, nulla provident qui reiciendis sequi veritatis voluptatum?
             </div>
         </div>
-        <blockquote class="text-center" style="font-size: 20px;margin-top: 30px; font-family: Consolas;">
-           "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        <blockquote class="text-center" style="font-size: 20px;margin-top: 50px; font-family: Consolas;">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         </blockquote>
+    </div>
+    <div class="services text-center" style="padding: 30px; background-color: #2ab27b; color: white;">
+        <h1 class="text-center"
+            style="color: #ffffff;font-family: Calibri; text-transform: uppercase; font-size: 30px; letter-spacing: 2px;">
+            Our Services</h1>
+        <hr style="border-color: whitesmoke; width: 60%;">
+        <br>
+        <div class="row" style="padding: 0 4%;">
+            <div class="col-md-4">
+                <div style="border: solid 1px #196c4b;padding: 30px;">
+                    <i class="fa fa-truck" aria-hidden="true" style="font-size:50px; margin-bottom: 20px; "></i>
+                    <div style="margin: 10px;font-family: Calibri;font-size: 17px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing
+                        elit. Dignissimos, laudantium.
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div style="border: solid 1px #196c4b;padding: 30px;">
+                    <i class="fa fa-cutlery" aria-hidden="true" style="font-size:50px;margin-bottom: 20px; "></i>
+                    <div style="margin: 10px;font-family: Calibri;font-size: 17px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing
+                        elit. Dignissimos, laudantium.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="border: solid 1px #196c4b;padding: 30px;">
+                    <i class="fa fa-user-o" aria-hidden="true" style="font-size:50px;margin-bottom: 20px; "></i>
+                    <div style="margin: 10px;font-family: Calibri;font-size: 17px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing
+                        elit. Dignissimos, laudantium.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 22px; font-family: Calibri;padding: 40px;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <br>Assumenda dicta eaque eos fugiat numquam odio
+            perferendis quas tempora, ullam veritatis.
+        </p>
+        <hr style="width: 90%;">
     </div>
 </div>
 </body>

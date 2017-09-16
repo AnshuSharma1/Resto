@@ -1,48 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Resto</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo asset('css/app.css')?>" type="text/css">
-    <link rel="stylesheet" href="<?php echo asset('css/font-awesome.css')?>">
-    <style>
-        #jumbo {
-            background: #606c88; /* fallback for old browsers */
-            background: -webkit-linear-gradient(to bottom, #3f4c6b, #606c88); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        }
+@extends('layout')
 
-        #intro {
-            background-color: rgba(255, 136, 106, 0.05);
-        }
 
-        .reserve_item {
-            margin: 30px 0;
-        }
-    </style>
-</head>
-<body>
-<div class="container-fluid" style="padding: 0;">
-    <nav class="navbar navbar-inverse" style="border-radius: 0; padding: 0 15px ;margin: 0; font-size: larger;">
-        <div class="navbar-header">
-            <div class="navbar-brand"
-                 style="padding-left: 0; text-transform: uppercase; letter-spacing: 3px; font-size: 20px;">
-                Resto
-            </div>
-        </div>
-        <ul class="nav navbar-nav navbar-right" style="letter-spacing: 1px;">
-            <li>
-                <a href="#" class="navbar-item">Home</a>
-            </li>
-            <li>
-                <a href="#" class="navbar-item">About</a>
-            </li>
-            <li>
-                <a href="#" class="navbar-item">Login</a>
-            </li>
-        </ul>
-    </nav>
+@section('jumbo')
     <div style="padding: 20px;color: #dcdcdc;" id="jumbo">
         <div class="row" style="margin: 0;">
             <div class="col-md-4 panel text-center" style="background-color: #292929; ">
@@ -121,6 +80,9 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('container')
     <div id="intro" style="padding: 20px;">
         <h1 class="h1 text-center"
             style="font-family: Calibri; text-transform: uppercase; font-size: 30px; letter-spacing: 2px;">
@@ -207,6 +169,5 @@
         </p>
         <hr style="width: 90%;">
     </div>
-</div>
-</body>
-</html>
+
+@endsection

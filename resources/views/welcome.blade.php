@@ -169,5 +169,43 @@
         </p>
         <hr style="width: 90%;">
     </div>
+    <div class="feedback">
+        <br>
+        <h3 class="h3 text-center"
+            style="font-family: Forte;font-weight: 100; text-transform: uppercase; font-size: 30px; letter-spacing: 2px;">
+            Feedback</h3>
+        <hr style="width: 50%; border-color: black;">
+        <div class="row" style="padding: 4% 4%;">
+            <div class="card col-md-4 text-center">
+                <img class="card-img-top img-circle" width="60%" src="{{ asset('storage/images/Ninja-icon.png') }}"
+                     alt="Card image cap">
+                <div class="card-block">
+                    <h3 class="card-title" style="color: black;">Lorem ipsum.</h3>
+                    <p class="card-text" style="padding: 10px 40px; font-size: larger; font-style: italic;">" Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur
+                        debitis eligendi laudantium provident saepe. "</p>
+                </div>
+            </div>
+            <div class="card col-md-4 text-center">
+                <img class="card-img-top img-circle" width="60%" src="{{ asset('storage/images/unnamed.png') }}"
+                     alt="Card image cap">
+                <div class="card-block">
+                    <h3 class="card-title" style="color: black;">Lorem ipsum.</h3>
+                    <p class="card-text" style="padding: 10px 40px; font-size: larger; font-style: italic;">" Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur. "</p>
+                </div>
+            </div>
+            <div class="card col-md-4 text-center">
+                <img class="card-img-top img-circle" width="60%" src="{{ asset('storage/images/male3-512.png') }}"
+                     alt="Card image cap">
+                <div class="card-block">
+                    <h3 class="card-title" style="color: black;">Lorem ipsum.</h3>
+                    <p class="card-text" style="padding: 10px 40px; font-size: larger; font-style: italic;">" Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur
+                        debitis eligendi laudantium. "</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 @endsection

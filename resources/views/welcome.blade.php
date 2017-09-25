@@ -1,4 +1,21 @@
 @extends('layout')
+@section('style')
+    #jumbo {
+    background: url("{{ asset('storage/images/food.jpeg') }}") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    #intro {
+    background-color: rgba(255, 136, 106, 0.05);
+    }
+
+    .reserve_item {
+    margin: 30px 0;
+    }
+@endsection
 
 
 @section('jumbo')
@@ -62,12 +79,12 @@
                 </p>
                 <br>
             </div>
-            <div class="col-md-8 text-center" style="color: #ffffff;">
-                <div style="font-size: 30px;text-transform: uppercase; font-family: Aparajita; letter-spacing: 3px;">
+            <div class="col-md-8 text-center" style="color: black;">
+                <div style="font-size: 40px;text-transform: uppercase; font-family: 'Abril Fatface', cursive; letter-spacing: 5px; color: white;font-weight: bold;">
                     About Resto
                 </div>
                 <hr style="width: 80%; margin:10px auto;">
-                <p style="padding: 100px;font-size: 20px; font-family: Calibri;">
+                <p style="padding: 30px; margin: 80px; opacity: 0.9; font-size: 20px; font-family: Calibri; background-color: whitesmoke;">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aut culpa cum delectus
                     doloribus dolorum ducimus error et exercitationem in iure molestias, mollitia natus quidem quod quos
                     ratione reiciendis saepe sint unde velit vitae. Assumenda cupiditate error libero molestias placeat
@@ -91,7 +108,8 @@
         <hr style="border-color: black; width: 50%;">
         <br>
         <div class="row">
-            <div class="col-md-4 col-md-offset-1" style="background-color: #a94442;height: 400px;"></div>
+            <div class="col-md-4 col-md-offset-1"
+                 style="background-color: #a94442;height: 400px;margin-right: 60px;"></div>
             <div class="col-md-4 col-md-offset-1 text-center"
                  style="font-size: larger; height: 400px; padding: 80px 0;">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
@@ -103,7 +121,7 @@
         <br>
         <div class="row">
             <div class="col-md-4 col-md-offset-1 text-center"
-                 style="font-size: larger; height: 400px; padding: 80px 0;">
+                 style="font-size: larger; height: 400px; padding: 80px 0; margin-right: 60px;">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
                 eos et eum iure minima nam necessitatibus nisi officiis quasi quibusdam quidem quod, reiciendis
                 reprehenderit saepe sequi soluta. Aperiam consectetur, corporis debitis, deleniti dignissimos error eum
@@ -113,7 +131,8 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-md-4 col-md-offset-1" style="background-color: palevioletred;height: 400px;"></div>
+            <div class="col-md-4 col-md-offset-1"
+                 style="background-color: palevioletred;height: 400px;margin-right: 60px;"></div>
             <div class="col-md-4 col-md-offset-1 text-center"
                  style="font-size: larger; height: 400px; padding: 80px 0;">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid blanditiis corporis ducimus
@@ -175,7 +194,7 @@
             style="font-family: Forte;font-weight: 100; text-transform: uppercase; font-size: 30px; letter-spacing: 2px;">
             Feedback</h3>
         <hr style="width: 50%; border-color: black;">
-        <div class="row" style="padding: 4% 4%;">
+        <div class="row" style="padding:4%;">
             <div class="card col-md-4 text-center">
                 <img class="card-img-top img-circle" width="60%" src="{{ asset('storage/images/Ninja-icon.png') }}"
                      alt="Card image cap">
@@ -207,5 +226,48 @@
             </div>
         </div>
     </div>
+    <div class="footer" style="background-color: rgb(31,31,31);color: white;">
+        <div class="row" style="margin: 0;padding: 30px;">
+            <div class="col-md-6" style="padding: 0 30px;">
+                <div class="row" style="color: white;">
+                    <div class="col-md-2"><a href="#"><img src="{{ asset('storage/images/facebook.png') }}" alt="Facebook"
+                                                           width="60%"></a></div>
+                    <div class="col-md-2"><a href="#"><img src="{{ asset('storage/images/instagram.png') }}" alt="Instagram"
+                                                           width="60%"></a></div>
+                    <div class="col-md-2"><a href="#"><img src="{{ asset('storage/images/twitter.png') }}" alt="Twitter"
+                                                           width="60%" style="background-color: inherit;"></a></div>
+                    <div class="col-md-2"><a href="#"><img src="{{ asset('storage/images/google.png') }}" alt="Google Plus"
+                                                           width="60%" style="background-color: inherit;"></a></div>
+                    <div class="col-md-4"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding: 0 15px;">
+                        <h3>ADDRESS</h3>
+                        <p style="padding:10px 0;">
+                            C-XYZ , Some Street, Some Place, Some City ,
+                            <br>something something - 226xyz
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 style="font-size: 20px;">CONTACT US</h3>
+                        info@mysite.com
+                        <br>
+                        Tel: 123-456-7890
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="font-size: 20px;">HOURS</h3>
+                        OPEN DAILY
+                        <br>
+                        10AM-8PM
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
 
+            </div>
+        </div>
+    </div>
 @endsection

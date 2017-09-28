@@ -19,5 +19,6 @@
     @yield('container')
 
 </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKQWJQu-2na3P9giryYcmHVdoVHMueJIA&callback=myMap"></script>
 </body>
 </html>

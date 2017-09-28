@@ -194,7 +194,7 @@
             style="font-family: Forte;font-weight: 100; text-transform: uppercase; font-size: 30px; letter-spacing: 2px;">
             Feedback</h3>
         <hr style="width: 50%; border-color: black;">
-        <div class="row" style="padding:4%;">
+        <div class="row" style="padding:4% 4% 0 4%;">
             <div class="card col-md-4 text-center">
                 <img class="card-img-top img-circle" width="60%" src="{{ asset('storage/images/Ninja-icon.png') }}"
                      alt="Card image cap">
@@ -225,8 +225,17 @@
                 </div>
             </div>
         </div>
+        <p style="text-align: center; margin-bottom: 20px;">
+            <img src="{{ asset('storage/images/heart.png') }}" alt="heart" style="width: 30px; margin-bottom: 10px;">
+            <br>
+            <span style="font-weight: bold; letter-spacing: 3px; font-size: larger;">WITH LOVE !</span>
+        </p>
     </div>
     <div class="footer" style="background-color: rgb(31,31,31);color: white;">
+        <div class="row" style="margin: 0; padding: 20px 60px;">
+            <h3 style="border-color: whitesmoke;">CONNECT WITH US</h3>
+            <hr style="width: 94%; margin-left:0; ">
+        </div>
         <div class="row" style="margin: 0;padding: 30px;">
             <div class="col-md-6" style="padding: 0 30px;">
                 <div class="row" style="color: white;">
@@ -247,6 +256,7 @@
                         <p style="padding:10px 0;">
                             C-XYZ , Some Street, Some Place, Some City ,
                             <br>something something - 226xyz
+                            <br>Lorem ipsum dolor sit amet, consectetur adipisicing.
                         </p>
                     </div>
                 </div>
@@ -266,20 +276,17 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div id="googleMap" style="width:100%;height:400px;"></div>
-
-                <script>
-                    function myMap() {
-                        var mapProp= {
-                            center:new google.maps.LatLng(23.1781761,80.0232782),
-                            zoom:5,
-                        };
-                        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                    }
-                </script>
-
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKQWJQu-2na3P9giryYcmHVdoVHMueJIA&callback=myMap"></script>
+                <div id="googleMap" style="width:85%;height:350px;"></div>
             </div>
         </div>
     </div>
+    <script>
+        function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(23.1781761,80.0232782),
+                zoom:5,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
 @endsection

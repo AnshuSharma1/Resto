@@ -10,7 +10,13 @@
             <a href="#" class="navbar-item">Home</a>
         </li>
         <li>
-            <a href="#" class="navbar-item">About</a>
+            <a href="#" class="navbar-item">Menu</a>
+        </li>
+        <li>
+            <a href="#" class="navbar-item">Contact</a>
+        </li>
+        <li>
+            <a href="#" class="navbar-item">Order Online</a>
         </li>
         <li>
             <a href="#" class="navbar-item">Login</a>

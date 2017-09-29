@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo asset('css/app.css')?>" type="text/css">
     <link rel="stylesheet" href="<?php echo asset('css/font-awesome.css')?>">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Courgette|Quicksand" rel="stylesheet">
     <style>
         @yield('style')
     </style>
@@ -18,7 +18,7 @@
     @yield('jumbo')
     @yield('container')
 
+    @include('footer')
 </div>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKQWJQu-2na3P9giryYcmHVdoVHMueJIA&callback=myMap"></script>
 </body>
 </html>

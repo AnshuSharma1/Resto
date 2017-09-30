@@ -1,5 +1,5 @@
 <div class="footer" style="background-color: #222;color: white;">
-    <div class="row" style="margin: 0; padding: 20px 60px;">
+    <div class="row" style="margin: 0; padding: 20px 60px 20px 75px;">
         <h3 style="border-color: whitesmoke;">CONNECT WITH US</h3>
         <hr style="width: 94%; margin-left:0; ">
     </div>

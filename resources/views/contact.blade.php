@@ -19,7 +19,15 @@
     .row{
     margin:0;
     }
-    
+    .message{
+    background: url("{{ asset('storage/images/food5.jpeg') }}") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    opacity:0.9;
+    }
 @endsection
 
 @section('jumbo')
@@ -68,7 +76,19 @@
             Book A Table
         </a>
     </div>
-
+    <div class="message text-center" style="padding: 100px;">
+        <div style="margin-top:40px; color: black;">
+            <div style="font-size: 30px; font-style: italic;">
+                Have A Question For Us?
+            </div>
+            <div style="font-size: 40px; font-weight: bold; font-family:'Century Schoolbook';">
+                CONTACT US TODAY
+            </div>
+            <div style="margin: 30px 0; font-size: 22px; letter-spacing: 2px;">
+                (+91) 951XXYYZ98, 52240YWWT3
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('script')

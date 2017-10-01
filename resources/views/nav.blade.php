@@ -13,7 +13,7 @@
             <a href="/menu" class="navbar-item">Menu</a>
         </li>
         <li>
-            <a href="#" class="navbar-item">Contact</a>
+            <a href="/contact" class="navbar-item">Contact</a>
         </li>
         <li>
             <a href="#" class="navbar-item">Order Online</a>

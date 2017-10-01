@@ -42,18 +42,5 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div id="googleMap" style="width:85%;height:350px;"></div>
-        </div>
     </div>
 </div>
-<script>
-    function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng(23.1781761,80.0232782),
-            zoom:5,
-        };
-        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKQWJQu-2na3P9giryYcmHVdoVHMueJIA&callback=myMap"></script>

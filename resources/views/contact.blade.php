@@ -84,10 +84,37 @@
             <div style="font-size: 40px; font-weight: bold; font-family:'Century Schoolbook';">
                 CONTACT US TODAY
             </div>
-            <div style="margin: 30px 0; font-size: 22px; letter-spacing: 2px;">
-                (+91) 951XXYYZ98, 52240YWWT3
-            </div>
+            <div style="height: 10em;"></div>
         </div>
+    </div>
+    <div class="contact-form text-center" style="padding: 30px 0 50px 0; width: 70%; margin: auto;">
+        <h2 style="margin: 30px 0 30px 0;">SEND US A MESSAGE</h2>
+        <hr style="border-color: black; width: 35%; border-style: dashed;">
+        <div style="margin: 40px 0 10px 0; font-size: 18px; letter-spacing: 2px;">
+            (+91) 951XXYYZ98, 52240YWWT3
+        </div>
+        <div style="margin: 10px 0 50px 0; font-size: 18px; letter-spacing: 2px;">
+            Email us at xyz@gmail.com , abc@yahoo.com
+        </div>
+        <form action="">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Your Name" name="cname" class="form-control" style="color: black;">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="Your Email" name="cmail" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea name="ctext" id="ctext" cols="30" rows="10" class="form-control" placeholder="Your Message"></textarea>
+                </div>
+            </div>
+            <button class="btn btn-primary" style="margin-top: 30px; padding:10px 50px 10px 50px;">
+                Submit
+            </button>
+        </form>
     </div>
 @endsection
 

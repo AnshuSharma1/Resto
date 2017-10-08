@@ -35,4 +35,52 @@
 @endsection
 
 @section('container')
+    <div class="row text-center" id="rules">
+        <h3>RULES AND REGULATIONS</h3>
+        <hr style="width: 50%; margin: auto;border-color: #696969;">
+        <div style="margin-top: 20px; padding: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Animi beatae, doloremque dolores ducimus eligendi
+            fuga odit perferendis sapiente temporibus tenetur!
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, voluptate.
+            <hr style="border-color: #555555; width: 30%;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+            <br>
+            <hr style="border-color: #555555; width: 10%;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+        </div>
+    </div>
+    <form action="" style="width: 70%; margin: auto;margin-bottom: 60px;" class="text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" name="resname" placeholder="Your Name" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <input type="email" name="resemail" placeholder="Your Email" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <select name="resplace" class="form-control">
+                    <option value="Someplace">Someplace</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px;margin-bottom: 40px;">
+            <div class="col-md-4">
+                <input type="time" name="restime" placeholder="Time" class="form-control" value="20:30">
+            </div>
+            <div class="col-md-4">
+                <input type="date" name="resdate" placeholder="Your Name" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <select name="resnumber" class="form-control">
+                    <option value="noofpeople">4 People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn btn-primary" style="padding: 10px 40px;">BOOK A TABLE</button>
+    </form>
 @endsection

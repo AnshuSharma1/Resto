@@ -10,16 +10,21 @@
             <a href="/" class="navbar-item">Home</a>
         </li>
         <li>
+            <a href="#" class="navbar-item">About</a>
+        </li>
+        <li>
             <a href="/menu" class="navbar-item">Menu</a>
         </li>
         <li>
             <a href="/contact" class="navbar-item">Contact</a>
         </li>
         <li>
-            <a href="#" class="navbar-item">Order Online</a>
+            <a href="/reservations" class="navbar-item">Reservations</a>
         </li>
         <li>
-            <a href="#" class="navbar-item">Login</a>
+            <a href="#" class="navbar-item">Order
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
         </li>
     </ul>
 </nav>

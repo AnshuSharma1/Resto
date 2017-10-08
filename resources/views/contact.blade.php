@@ -47,7 +47,7 @@
 
 @endsection
 
-@section('container')
+@section('content')
     <div class="gmap row text-center" style="color: black; margin-bottom: 5em;">
         <h2 style="margin: 40px 0 20px 0;">OUR &nbspLOCATION</h2>
         <hr style="width: 30%; border-color: black; margin-bottom: 5em;">
@@ -116,6 +116,7 @@
             </button>
         </form>
     </div>
+    @include('footer')
 @endsection
 
 @section('script')

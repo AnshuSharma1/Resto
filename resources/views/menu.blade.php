@@ -80,7 +80,7 @@
     </div>
 @endsection
 
-@section('container')
+@section('content')
     <div class="starters">
         <h2 class="text-center menu-type">Starters</h2>
         <hr style="width: 40%; border-color: black;">
@@ -321,5 +321,5 @@
             </div>
         </div>
     </div>
-
+    @include('footer')
 @endsection

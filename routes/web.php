@@ -26,3 +26,7 @@ Route::get('/contact', function () {
 Route::get('/reservations', function () {
     return view('reservation');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

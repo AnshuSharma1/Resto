@@ -14,6 +14,7 @@
     }
     #rules{
     padding:30px;
+    color:#555;
     }
 @endsection
 
@@ -34,8 +35,8 @@
     </div>
 @endsection
 
-@section('container')
-    <div class="row text-center" id="rules">
+@section('content')
+    <div class="row text-center" id="rules" >
         <h3>RULES AND REGULATIONS</h3>
         <hr style="width: 50%; margin: auto;border-color: #696969;">
         <div style="margin-top: 20px; padding: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Animi beatae, doloremque dolores ducimus eligendi
@@ -83,4 +84,5 @@
         </div>
         <button class="btn btn-primary" style="padding: 10px 40px;">BOOK A TABLE</button>
     </form>
+    @include('footer')
 @endsection

@@ -12,8 +12,7 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'RESTO',
 
     /*
     |--------------------------------------------------------------------------
@@ -171,11 +170,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Resto\Providers\AppServiceProvider::class,
+        Resto\Providers\AuthServiceProvider::class,
+        // Resto\Providers\BroadcastServiceProvider::class,
+        Resto\Providers\EventServiceProvider::class,
+        Resto\Providers\RouteServiceProvider::class,
 
     ],
 

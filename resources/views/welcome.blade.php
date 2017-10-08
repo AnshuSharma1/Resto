@@ -42,7 +42,7 @@
     </div>
 @endsection
 
-@section('container')
+@section('content')
     <div id="intro" style="padding: 20px;">
         <h1 class="h1 text-center"
             style="font-family: Calibri; text-transform: uppercase; font-size: 30px; letter-spacing: 2px;">
@@ -163,4 +163,6 @@
             <span style="font-weight: bold; letter-spacing: 3px; font-size: larger;">WITH LOVE !</span>
         </p>
     </div>
+
+    @include('footer')
 @endsection

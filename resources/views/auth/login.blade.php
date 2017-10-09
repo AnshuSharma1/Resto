@@ -61,6 +61,10 @@
                             </div>
                         </div>
                     </form>
+                    <div  style="margin: auto; margin-top: 30px;width: 68%;">
+                        Not a member yet ?
+                        <a href="{{ route('register') }}" style="font-size: larger; font-weight: bold;">&nbspREGISTER</a>
+                    </div>
                 </div>
             </div>
         </div>

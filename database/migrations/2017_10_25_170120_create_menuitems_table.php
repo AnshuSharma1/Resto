@@ -18,7 +18,7 @@ class CreateMenuitemsTable extends Migration
             $table->string('name',100)->unique();
             $table->integer('cost');
             $table->string('category',100);
-            $table->boolean('is_veg');
+            $table->string('is_veg',10);
             $table->timestamps();
         });
     }

@@ -25,4 +25,10 @@ class AdminController extends Controller
     {
         return view('admin');
     }
+
+    public function menu()
+    {
+        return view('admin-menu');
+    }
+
 }

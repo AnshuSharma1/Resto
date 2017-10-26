@@ -19,7 +19,8 @@ class ReservationController extends Controller
      */
     public function index()
     {
-            return view('admin-reservations');
+        $res_items = Reservation::all();
+        return view('admin-reservations')->with('res_items',$res_items);
     }
 
     /**

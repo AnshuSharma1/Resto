@@ -41,7 +41,7 @@
                             <li role="presentation" class="col-md-2 "><a href="/admin/menu">Menu</a></li>
                             <li role="presentation" class="col-md-2"><a href="#">Orders</a></li>
                             <li role="presentation" class="col-md-3"><a href="/admin/reservations">Reservations</a></li>
-                            <li role="presentation" class="col-md-2"><a href="#">Users</a></li>
+                            <li role="presentation" class="col-md-2"><a href="/admin/users">Users</a></li>
                         </ul>
                         <hr style="margin-top: 20px;border-color: #ababab;">
                     </nav>

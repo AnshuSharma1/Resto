@@ -35,3 +35,5 @@ Route::post('/admin/login','Auth\AdminLoginController@login')->name('admin.login
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
 Route::get('/admin/menu', 'MenuitemController@index')->name('admin.menu');
 Route::get('/admin/reservations','ReservationController@index')->name('admin.reservations');
+Route::get('/admin/users','Auth\RegisterController@index')->name('admin.users');
+

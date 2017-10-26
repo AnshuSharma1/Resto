@@ -74,4 +74,11 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    public function index()
+    {
+        $users = User::all();
+        return view('admin-users')->with('users',$users);
+    }
+
 }

@@ -41,7 +41,7 @@
                 <a href="/reservations" class="navbar-item">Reservations</a>
             </li>
             <li>
-                <a href="#" class="navbar-item">Order
+                <a href="/order" class="navbar-item">Order
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                 </a>
             </li>

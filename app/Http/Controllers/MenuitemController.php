@@ -21,12 +21,22 @@ class MenuitemController extends Controller
     }
 
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \Resto\Menuitem  $menuitem
-     * @return \Illuminate\Http\Response
-     */
+    public function create(Request $request)
+    {
+        // Validate the request...
+
+        $item = new Menuitem();
+
+        $item->name = $request->name;
+        $item->cost = $request->cost;
+        $item->category = $request->category;
+        $item->is_veg = $request->is_veg;
+
+        $item->save();
+
+        return redirect('/admin/menu');
+    }
+
     public function destroy(Menuitem $menuitem)
     {
         //

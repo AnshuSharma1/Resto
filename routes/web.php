@@ -26,6 +26,9 @@ Route::get('/contact', function () {
 Route::get('/reservations', function () {
     return view('reservation');
 });
+Route::get('/order',function (){
+    return view('order');
+});
 
 Auth::routes();
 
@@ -34,6 +37,7 @@ Route::get('/admin/login','Auth\AdminLoginController@showLoginForm')->name('admi
 Route::post('/admin/login','Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
 Route::get('/admin/menu', 'MenuitemController@index')->name('admin.menu');
+Route::post('/admin/menu', 'MenuitemController@create')->name('admin.menu.submit');
 Route::get('/admin/reservations','ReservationController@index')->name('admin.reservations');
 Route::get('/admin/users','Auth\RegisterController@index')->name('admin.users');
 

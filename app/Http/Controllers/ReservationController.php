@@ -28,9 +28,28 @@ class ReservationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        // Validate the request...
+
+        $res = new Reservation();
+
+        $res->name = $request->name;
+        $res->email = $request->email;
+        $res->phone = $request->phone;
+        $res->no_of_people= $request->no_of_people;
+        $res->time_slot = $request->time_slot;
+        $res->res_date = $request->res_date;
+        $res->place = $request->place;
+
+        $res->save();
+
+        return redirect('/reservations');
+    }
+
+    public function reserve()
+    {
+        return view('reservation');
     }
 
     /**

@@ -23,12 +23,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/reservations', function () {
-    return view('reservation');
-});
-Route::get('/order',function (){
-    return view('order');
-});
+Route::get('/reservations', 'ReservationController@reserve');
+Route::post('/reservations', 'ReservationController@create');
+
+Route::get('/order','OrderController@index');
 
 Auth::routes();
 

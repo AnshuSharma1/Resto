@@ -52,6 +52,18 @@
                     @endif
                 </div>
             </div>
+            <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
+                <label for="description" class="col-md-2 control-label">Description</label>
+
+                <div class="col-md-8 col-md-offset-1">
+                    <textarea name="description" id="description" cols="30" rows="7" class="form-control"></textarea>
+                    @if ($errors->has('cost'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('description') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
 
             <div class="form-group{{ $errors->has('is_veg') ? ' has-error' : '' }}">
                 <label for="is_veg" class="col-md-2 control-label">Is the food veg?</label>

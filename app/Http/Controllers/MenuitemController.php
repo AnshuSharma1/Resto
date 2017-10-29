@@ -31,6 +31,7 @@ class MenuitemController extends Controller
         $item->cost = $request->cost;
         $item->category = $request->category;
         $item->is_veg = $request->is_veg;
+        $item->description= $request->description;
 
         $item->save();
 

@@ -3,6 +3,7 @@
 namespace Resto\Http\Controllers;
 
 use Resto\Order;
+use Resto\Menuitem;
 use Illuminate\Http\Request;
 
 class OrderController extends Controller
@@ -14,7 +15,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return view('order');
+        $items = Menuitem::all();
+        return view('order')->with('items',$items);
     }
 
     /**
@@ -26,6 +28,10 @@ class OrderController extends Controller
     {
         //
     }
+
+//    public function getAddToCart(Request $request,$id){
+//
+//    }
 
     /**
      * Store a newly created resource in storage.

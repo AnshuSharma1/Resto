@@ -71,7 +71,7 @@
                 <input type="time" name="time_slot" placeholder="Time" class="form-control" value="20:30">
             </div>
             <div class="col-md-4">
-                <input type="date" name="res_date" placeholder="Your Name" class="form-control">
+                <input type="date" name="res_date" placeholder="Date (yyyy-mm-dd)" class="form-control">
             </div>
             <div class="col-md-4">
                 <select name="no_of_people" class="form-control">

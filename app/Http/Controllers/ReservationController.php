@@ -47,11 +47,6 @@ class ReservationController extends Controller
         return redirect('/reservations');
     }
 
-    public function reserve()
-    {
-        return view('reservation');
-    }
-
     /**
      * Store a newly created resource in storage.
      *

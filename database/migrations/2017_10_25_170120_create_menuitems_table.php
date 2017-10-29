@@ -16,6 +16,7 @@ class CreateMenuitemsTable extends Migration
         Schema::create('menuitems', function (Blueprint $table) {
             $table->increments('fid');
             $table->string('name',100)->unique();
+            $table->text('description');
             $table->integer('cost');
             $table->string('category',100);
             $table->string('is_veg',10);

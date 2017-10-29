@@ -86,10 +86,12 @@
         <hr style="width: 40%; border-color: black;">
         <br>
         <div class="row " style="padding: 20px 0 20px 80px;color: black;">
+            @foreach($items as $item)
+                @if (($item->category)== 'starter')
             <div class="col-md-4">
-                <h4 class="item-head">Lorem ipsum.</h4>
-                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Deleniti, est!
-                <p style="margin: 10px 0; ">$9</p>
+                <h4 class="item-head">{{ $item->name }}</h4>
+                {{ $item->description }}
+                <p style="margin: 10px 0; ">Rs. {{ $item->cost }}</p>
                 <button type="button" class="btn starter-btn">
                     <i class="fa fa-shopping-bag" aria-hidden="true" style="color: white;"></i>
                 </button>
@@ -105,17 +107,21 @@
                 <br>
                 <hr class="dot">
             </div>
+               @endif
+             @endforeach
         </div>
     </div>
-    {{--<div class="menu">
+    <div class="menu">
         <h2 class="text-center menu-type">Mains</h2>
         <hr style="width: 40%; border-color: black;">
         <br>
         <div class="row " style="padding: 20px 0 20px 80px;color: black;">
+            @foreach($items as $item)
+                @if (($item->category)== 'maincourse')
             <div class="col-md-4" >
-                <h4 class="item-head">Lorem ipsum.</h4>
-                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Deleniti, est!
-                <p style="margin: 10px 0; ">$9</p>
+                <h4 class="item-head">{{ $item->name }}</h4>
+                {{ $item->description }}
+                <p style="margin: 10px 0; ">{{ $item->cost }}</p>
                 <button type="button" class="btn mains-btn" >
                     <i class="fa fa-shopping-bag" aria-hidden="true" ></i>
                 </button>
@@ -130,99 +136,9 @@
                 <br>
                 <hr class="dot">
             </div>
-            <div class="col-md-4">
-                <h4 class="item-head">Dolor sit amet.</h4>
-                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit.
-                <p style="margin: 10px 0; ">$9</p>
-                <button type="button" class="btn mains-btn" >
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                </button>
-                &nbsp
-                <select name="mains2" class="main-qty" >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <br>
-                <hr class="dot">
-            </div>
-            <div class="col-md-4">
-                <h4 class="item-head">Lorem amet.</h4>
-                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit.
-                <p style="margin: 10px 0; ">$9</p>
-                <button type="button" class="btn mains-btn" >
-                    <i class="fa fa-shopping-bag" aria-hidden="true" ></i>
-                </button>
-                &nbsp
-                <select name="mains3" class="main-qty"  >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <br>
-                <hr class="dot">
-            </div>
+                @endif
+             @endforeach
         </div>
-        <div class="row " style="padding: 20px 0 20px 80px;color: black;">
-            <div class="col-md-4" >
-                <h4 class="item-head">Lorem ipsum.</h4>
-                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Deleniti, est!
-                <p style="margin: 10px 0; ">$9</p>
-                <button type="button" class="btn mains-btn">
-                    <i class="fa fa-shopping-bag" aria-hidden="true" ></i>
-                </button>
-                &nbsp
-                <select name="mains4" class="main-qty" >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <br>
-                <hr class="dot">
-            </div>
-            <div class="col-md-4">
-                <h4 class="item-head">Dolor sit amet.</h4>
-                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit.
-                <p style="margin: 10px 0; ">$9</p>
-                <button type="button" class="btn mains-btn" >
-                    <i class="fa fa-shopping-bag" aria-hidden="true" ></i>
-                </button>
-                &nbsp
-                <select name="mains5" class="main-qty" >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <br>
-                <hr class="dot">
-            </div>
-            <div class="col-md-4">
-                <h4 class="item-head">Lorem amet.</h4>
-                Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit.
-                <p style="margin: 10px 0; ">$9</p>
-                <button type="button" class="btn mains-btn" >
-                    <i class="fa fa-shopping-bag" aria-hidden="true" ></i>
-                </button>
-                &nbsp
-                <select name="mains6" class="main-qty" >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <br>
-                <hr class="dot">
-            </div>
-        </div>
-    </div>--}}
+    </div>
     @include('footer')
 @endsection

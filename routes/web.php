@@ -29,7 +29,7 @@ Route::get('/reservations', function () {
 });
 Route::post('/reservations', 'ReservationController@create');
 
-Route::get('/order','OrderController@index');
+Route::get('/order','OrderController@index')->name('order');
 
 Auth::routes();
 
@@ -38,10 +38,7 @@ Route::get('/admin/login','Auth\AdminLoginController@showLoginForm')->name('admi
 Route::post('/admin/login','Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
 Route::get('/admin/menu', 'MenuitemController@index')->name('admin.menu');
-Route::post('/admin/menu', 'MenuitemController@create')->name('admin.menu.submit');
+Route::post('/admin/menu', 'MenuitemController@store')->name('admin.menu.submit');
 Route::get('/admin/reservations','ReservationController@index')->name('admin.reservations');
 Route::get('/admin/users','Auth\RegisterController@index')->name('admin.users');
-Route::get('/add-to-cart/{id}',[
-    'uses' => 'OrderController@getAddToCart',
-    'as' => 'order.addToCart'
-]);
+Route::resource('/cart','CartController');

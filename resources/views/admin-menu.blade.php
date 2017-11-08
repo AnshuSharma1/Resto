@@ -56,7 +56,7 @@
                 <label for="description" class="col-md-2 control-label">Description</label>
 
                 <div class="col-md-8 col-md-offset-1">
-                    <textarea name="description" id="description" cols="30" rows="7" class="form-control"></textarea>
+                    <textarea name="description" id="description" cols="30" rows="7" class="form-control" required></textarea>
                     @if ($errors->has('cost'))
                         <span class="help-block">
                             <strong>{{ $errors->first('description') }}</strong>

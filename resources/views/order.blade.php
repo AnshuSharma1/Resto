@@ -91,10 +91,10 @@
             <div class="col-md-4">
                 <h4 class="item-head">{{ $item->name }}</h4>
                 {{ $item->description }}
-                <p style="margin: 10px 0; ">Rs. {{ $item->cost }}</p>
-                <button type="button" class="btn starter-btn">
+                <p style="margin: 10px 0; ">Rs. {{ $item->price }}</p>
+                <a href="{{route('cart.edit',$item->id)}}" type="button" class="btn starter-btn">
                     <i class="fa fa-shopping-bag" aria-hidden="true" style="color: white;"></i>
-                </button>
+                </a>
                 &nbsp
                 <select name="star1"
                         style="padding: 8px; border-radius:5px;vertical-align: bottom;border-color: #196c4b; ">
@@ -111,7 +111,7 @@
              @endforeach
         </div>
     </div>
-    <div class="menu">
+    {{--<div class="menu">
         <h2 class="text-center menu-type">Mains</h2>
         <hr style="width: 40%; border-color: black;">
         <br>
@@ -139,6 +139,6 @@
                 @endif
              @endforeach
         </div>
-    </div>
+    </div>--}}
     @include('footer')
 @endsection

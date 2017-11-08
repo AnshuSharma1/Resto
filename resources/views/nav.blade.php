@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-inverse navbar-static-top" style="border-radius: 0; border-width: 0;padding: 0 15px ;margin: 0; font-size: larger;">
     <div class="navbar-header" >
         <!-- Collapsed Hamburger -->
@@ -41,8 +42,14 @@
                 <a href="/reservations" class="navbar-item">Reservations</a>
             </li>
             <li>
-                <a href="/order" class="navbar-item">Order
+                <a href="/order" class="navbar-item">Order Online</a>
+            </li>
+            <li>
+                <a href="{{route('cart.index')}}" class="navbar-item">Cart
                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <span style="padding: 4px; margin-left:2px;border-color: white;border-width: 2px;border-radius: 2px; background-color: grey;color: white;">
+                        {{Cart::count()}}
+                    </span>
                 </a>
             </li>
             <!-- Authentication Links -->

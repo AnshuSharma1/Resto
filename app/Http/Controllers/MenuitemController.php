@@ -21,7 +21,7 @@ class MenuitemController extends Controller
     }
 
 
-    public function create(Request $request)
+    public function store(Request $request)
     {
         // Validate the request...
 

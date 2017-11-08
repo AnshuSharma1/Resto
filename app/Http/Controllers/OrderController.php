@@ -2,6 +2,7 @@
 
 namespace Resto\Http\Controllers;
 
+use Illuminate\Support\Facades\Session;
 use Resto\Order;
 use Resto\Menuitem;
 use Illuminate\Http\Request;
@@ -29,9 +30,6 @@ class OrderController extends Controller
         //
     }
 
-//    public function getAddToCart(Request $request,$id){
-//
-//    }
 
     /**
      * Store a newly created resource in storage.

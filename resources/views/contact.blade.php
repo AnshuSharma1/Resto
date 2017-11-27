@@ -1,7 +1,7 @@
 @extends('layout')
 @section('style')
     #jumbo {
-    background: url("{{ asset('storage/images/pot.jpg') }}") no-repeat center center fixed;
+    background: url("{{ asset('images/pot.jpg') }}") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,7 +20,7 @@
     margin:0;
     }
     .message{
-    background: url("{{ asset('storage/images/food5.jpeg') }}") no-repeat center center fixed;
+    background: url("{{ asset('images/food5.jpeg') }}") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

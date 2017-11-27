@@ -1,7 +1,7 @@
 @extends('layout')
 @section('style')
     #jumbo {
-    background: url("{{ asset('storage/images/food.jpg') }}") no-repeat center center fixed;
+    background: url("{{ asset('images/food.jpg') }}") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -128,7 +128,7 @@
         <hr style="width: 50%; border-color: black;">
         <div class="row" style="padding:4% 4% 0 4%;">
             <div class="card col-md-4 text-center">
-                <img class="card-img-top img-circle" width="60%" src="{{ asset('storage/images/Ninja-icon.png') }}"
+                <img class="card-img-top img-circle" width="60%" src="{{ asset('images/Ninja-icon.png') }}"
                      alt="Card image cap">
                 <div class="card-block">
                     <h3 class="card-title" style="color: black;">Lorem ipsum.</h3>
@@ -138,7 +138,7 @@
                 </div>
             </div>
             <div class="card col-md-4 text-center">
-                <img class="card-img-top img-circle" width="60%" src="{{ asset('storage/images/unnamed.png') }}"
+                <img class="card-img-top img-circle" width="60%" src="{{ asset('images/unnamed.png') }}"
                      alt="Card image cap">
                 <div class="card-block">
                     <h3 class="card-title" style="color: black;">Lorem ipsum.</h3>
@@ -147,7 +147,7 @@
                 </div>
             </div>
             <div class="card col-md-4 text-center">
-                <img class="card-img-top img-circle" width="60%" src="{{ asset('storage/images/male3-512.png') }}"
+                <img class="card-img-top img-circle" width="60%" src="{{ asset('images/male3-512.png') }}"
                      alt="Card image cap">
                 <div class="card-block">
                     <h3 class="card-title" style="color: black;">Lorem ipsum.</h3>
@@ -158,7 +158,7 @@
             </div>
         </div>
         <p style="text-align: center; margin-bottom: 20px;">
-            <img src="{{ asset('storage/images/heart.png') }}" alt="heart" style="width: 30px; margin-bottom: 10px;">
+            <img src="{{ asset('images/myimage.png') }}" alt="heart" style="width: 30px; margin-bottom: 10px;">
             <br>
             <span style="font-weight: bold; letter-spacing: 3px; font-size: larger;">WITH LOVE !</span>
         </p>

@@ -20,11 +20,11 @@
         </p>
         <br>
         <div class="row" style="padding-bottom: 100px;">
-            <div class="col-md-4" style="padding:0;"><img src="{{ asset('storage/images/food1.jpeg') }}" alt="#"
+            <div class="col-md-4" style="padding:0;"><img src="{{ asset('images/food1.jpeg') }}" alt="#"
                                                           width="100%" height="320px"></div>
             <div class="col-md-4" style="padding-right: 0;padding-left:0; "><img
-                        src="{{ asset('storage/images/food2.jpeg') }}" alt="#" width="100%" height="320px"></div>
-            <div class="col-md-4" style="padding: 0;"><img src="{{ asset('storage/images/food3.jpg') }}" alt="#"
+                        src="{{ asset('images/food2.jpeg') }}" alt="#" width="100%" height="320px"></div>
+            <div class="col-md-4" style="padding: 0;"><img src="{{ asset('images/food3.jpg') }}" alt="#"
                                                            width="100%" height="320px"></div>
         </div>
     </div>

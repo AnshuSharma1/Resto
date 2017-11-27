@@ -12,7 +12,7 @@
         @foreach($cartItems as $cartItem)
         <tr>
             <td>{{ $cartItem->name }}</td>
-            <td>{{ $cartItem->price }}</td>
+            <td>{{ $cartItem->cost }}</td>
             <td width="50px">
                 {!! Form::open(['route' => ['cart.update',$cartItem->rowId], 'method' => 'PUT']) !!}
                     <input name="qty" type="text" value="{{$cartItem->qty}}">

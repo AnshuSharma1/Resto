@@ -1,7 +1,7 @@
 @extends('layout')
 @section('style')
     #jumbo {
-    background: url("{{ asset('storage/images/food12.jpeg') }}") no-repeat center center fixed;
+    background: url("{{ asset('images/food12.jpeg') }}") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -91,7 +91,7 @@
             <div class="col-md-4">
                 <h4 class="item-head">{{ $item->name }}</h4>
                 {{ $item->description }}
-                <p style="margin: 10px 0; ">Rs. {{ $item->price }}</p>
+                <p style="margin: 10px 0; ">Rs. {{ $item->cost }}</p>
                 <a href="{{route('cart.edit',$item->id)}}" type="button" class="btn starter-btn">
                     <i class="fa fa-shopping-bag" aria-hidden="true" style="color: white;"></i>
                 </a>

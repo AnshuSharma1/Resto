@@ -6,13 +6,13 @@
     <div class="row" style="margin: 0;padding: 30px;">
         <div class="col-md-6" style="padding: 0 30px;">
             <div class="row" style="color: white;">
-                <div class="col-md-2"><a href="#"><img src="{{ asset('storage/images/facebook.png') }}" alt="Facebook"
+                <div class="col-md-2"><a href="#"><img src="{{ asset('images/facebook.png') }}" alt="Facebook"
                                                        width="60%"></a></div>
-                <div class="col-md-2"><a href="#"><img src="{{ asset('storage/images/instagram.png') }}" alt="Instagram"
+                <div class="col-md-2"><a href="#"><img src="{{ asset('images/instagram.png') }}" alt="Instagram"
                                                        width="60%"></a></div>
-                <div class="col-md-2"><a href="#"><img src="{{ asset('storage/images/twitter.png') }}" alt="Twitter"
+                <div class="col-md-2"><a href="#"><img src="{{ asset('images/twitter.png') }}" alt="Twitter"
                                                        width="60%" style="background-color: inherit;"></a></div>
-                <div class="col-md-2"><a href="#"><img src="{{ asset('storage/images/google.png') }}" alt="Google Plus"
+                <div class="col-md-2"><a href="#"><img src="{{ asset('images/google.png') }}" alt="Google Plus"
                                                        width="60%" style="background-color: inherit;"></a></div>
                 <div class="col-md-4"></div>
             </div>

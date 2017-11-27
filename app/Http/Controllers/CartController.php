@@ -23,7 +23,7 @@ class CartController extends Controller
     public function edit($id)
     {
         $item=Menuitem::find($id);
-        Cart::add($id,$item->name,1,$item->price,['size'=>'medium']);
+        Cart::add($id,$item->name,1,$item->cost,['size'=>'medium']);
 
         return back();
     }

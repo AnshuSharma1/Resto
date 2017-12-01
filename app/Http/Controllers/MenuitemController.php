@@ -28,7 +28,7 @@ class MenuitemController extends Controller
         $item = new Menuitem();
 
         $item->name = $request->name;
-        $item->cost = $request->cost;
+        $item->price = $request->price;
         $item->category = $request->category;
         $item->is_veg = $request->is_veg;
         $item->description= $request->description;

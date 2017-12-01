@@ -23,7 +23,7 @@ class CartController extends Controller
     public function edit($id)
     {
         $item=Menuitem::find($id);
-        Cart::add($id,$item->name,1,$item->cost,['size'=>'medium']);
+        Cart::add($id,$item->name,1,$item->price,['size'=>'medium']);
 
         return back();
     }
@@ -48,8 +48,9 @@ class CartController extends Controller
      * @param  \Resto\Cart  $cart
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cart $cart)
+    public function destroy($id)
     {
-        //
+        Cart::remove($id);
+        return back();
     }
 }

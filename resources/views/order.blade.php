@@ -91,19 +91,11 @@
             <div class="col-md-4">
                 <h4 class="item-head">{{ $item->name }}</h4>
                 {{ $item->description }}
-                <p style="margin: 10px 0; ">Rs. {{ $item->cost }}</p>
+                <p style="margin: 10px 0; ">Rs. {{ $item->price }}</p>
                 <a href="{{route('cart.edit',$item->id)}}" type="button" class="btn starter-btn">
+                    <span style="color: white;font-weight: bold;">Add to cart &nbsp</span>
                     <i class="fa fa-shopping-bag" aria-hidden="true" style="color: white;"></i>
                 </a>
-                &nbsp
-                <select name="star1"
-                        style="padding: 8px; border-radius:5px;vertical-align: bottom;border-color: #196c4b; ">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
                 <br>
                 <hr class="dot">
             </div>
@@ -121,18 +113,11 @@
             <div class="col-md-4" >
                 <h4 class="item-head">{{ $item->name }}</h4>
                 {{ $item->description }}
-                <p style="margin: 10px 0; ">{{ $item->cost }}</p>
+                <p style="margin: 10px 0; ">{{ $item->price }}</p>
                 <button type="button" class="btn mains-btn" >
                     <i class="fa fa-shopping-bag" aria-hidden="true" ></i>
                 </button>
                 &nbsp
-                <select name="mains1" class="main-qty">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
                 <br>
                 <hr class="dot">
             </div>

@@ -15,8 +15,8 @@
 
                     @if ($errors->has('name'))
                         <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
+                          <strong>{{ $errors->first('name') }}</strong>
+                        </span>
                     @endif
                 </div>
             </div>
@@ -39,15 +39,15 @@
                 </div>
             </div>
 
-            <div class="form-group{{ $errors->has('cost') ? ' has-error' : '' }}">
-                <label for="cost" class="col-md-2 control-label">Food &nbsp;Item&nbsp; Cost</label>
+            <div class="form-group{{ $errors->has('price') ? ' has-error' : '' }}">
+                <label for="price" class="col-md-2 control-label">Food &nbsp;Item&nbsp; Price</label>
 
                 <div class="col-md-8 col-md-offset-1">
-                    <input id="cost" type="number" class="form-control" name="cost" value="{{ old('cost') }}" required >
+                    <input id="price" type="number" class="form-control" name="price" value="{{ old('price') }}" required >
 
-                    @if ($errors->has('cost'))
+                    @if ($errors->has('price'))
                         <span class="help-block">
-                            <strong>{{ $errors->first('cost') }}</strong>
+                            <strong>{{ $errors->first('price') }}</strong>
                         </span>
                     @endif
                 </div>
@@ -57,7 +57,7 @@
 
                 <div class="col-md-8 col-md-offset-1">
                     <textarea name="description" id="description" cols="30" rows="7" class="form-control" required></textarea>
-                    @if ($errors->has('cost'))
+                    @if ($errors->has('description'))
                         <span class="help-block">
                             <strong>{{ $errors->first('description') }}</strong>
                         </span>
@@ -97,7 +97,7 @@
                 @foreach($items as $item)
                     <ul>
                         <li>{{ $item->name }}</li>
-                        <li>{{ $item->cost }}</li>
+                        <li>{{ $item->price }}</li>
                         <li>{{ $item->category }}</li>
                         <li>{{ $item->is_veg }}</li>
                     </ul>   

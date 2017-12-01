@@ -42,3 +42,6 @@ Route::post('/admin/menu', 'MenuitemController@store')->name('admin.menu.submit'
 Route::get('/admin/reservations','ReservationController@index')->name('admin.reservations');
 Route::get('/admin/users','Auth\RegisterController@index')->name('admin.users');
 Route::resource('/cart','CartController');
+
+Route::get('checkout','CheckoutController@step1');
+Route::get('shipping-info','CheckoutController@shipping')->name('checkout.shipping');

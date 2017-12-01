@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class CheckoutController extends Controller
 {
-    public function step1()
+    /*public function step1()
     {
 
     	if(Auth::check()){
@@ -15,7 +15,7 @@ class CheckoutController extends Controller
     	}
 
     	return redirect('login');
-    }
+    }*/
 
     public function shipping()
     {

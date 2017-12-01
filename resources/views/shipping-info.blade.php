@@ -6,7 +6,7 @@
     <div class="col-sm-6 col-sm-offset-3">
         <h3>Shipping Info</h3>
         <br>
-        {!! Form::open(['route' => 'checkout.shipping', 'method' => 'post']) !!}
+        {!! Form::open(['route' => 'address.store', 'method' => 'post']) !!}
 
         <div class="form-group">
             {{ Form::label('addressline', 'Address Line') }}

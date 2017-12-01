@@ -39,7 +39,7 @@
         </tr>
     </table>
     <br>
-    <a class="btn btn-primary" href="{{ url('/checkout') }}">Checkout</a>
+    <a class="btn btn-primary" href="{{ route('checkout.shipping') }}">Checkout</a>
 </div>
 </div>
 @endsection

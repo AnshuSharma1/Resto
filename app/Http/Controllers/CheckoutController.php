@@ -5,7 +5,7 @@ namespace Resto\Http\Controllers;
 use Illuminate\Http\Request;
 use Resto\Shoppingcart;
 use Gloudemans\Shoppingcart\Facades\Cart;
-use Illuminate\Support\Facades\DB;
+use Resto\Order;
 use Illuminate\Support\Facades\Auth;
 
 class CheckoutController extends Controller
@@ -21,6 +21,8 @@ class CheckoutController extends Controller
 
         $cartDetails = Cart::content();
 
+        Shoppingcart::truncate();
+
         foreach($cartDetails as $c ){
           $cart = new Shoppingcart();
           $cart->product = $c->name;
@@ -28,6 +30,15 @@ class CheckoutController extends Controller
           $cart->price = $c->price;
           $cart->save();
         }
+
+        $cartitems = Shoppingcart::all();
+
+        $order= new Order();
+        $order->cart = serialize($cartitems);
+        $order->address = $request->input('address');
+        $order->name = $request->input('name');
+        $order->phone = $request->input('phone');
+        Auth::user()->orders()->save($order);
 
         Cart::destroy();
         

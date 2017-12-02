@@ -89,33 +89,6 @@
                 </div>
             </div>
         </form>
-
-        <div class="menu-view">
-            <label style="padding: 0 0 0 40px;margin: 0;font-size: 19px;font-weight: 600;" for="view_check">View the items of the menu??</label>
-            <input type="checkbox" id="view_check" style="margin-bottom: 20px; margin-left: 20px;" >
-            <div class="viewc" style="padding-left:20px; ">
-                @foreach($items as $item)
-                    <ul>
-                        <li>{{ $item->name }}</li>
-                        <li>{{ $item->price }}</li>
-                        <li>{{ $item->category }}</li>
-                        <li>{{ $item->is_veg }}</li>
-                    </ul>   
-                @endforeach
-            </div>
-        </div>
     </div>
 
-@endsection
-
-@section('script')
-    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-    <script>
-        $(document).ready(function () {
-            $('.viewc').hide();
-            $("#view_check").click(function () {
-                $(".viewc").toggle();
-            });
-        });
-    </script>
 @endsection

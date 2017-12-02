@@ -39,7 +39,7 @@
                         <ul class="nav nav-pills text-center nav-ul">
                             <li role="presentation" class="col-md-2"><a href="/admin">Home</a></li>
                             <li role="presentation" class="col-md-2 "><a href="/admin/menu">Menu</a></li>
-                            <li role="presentation" class="col-md-2"><a href="#">Orders</a></li>
+                            <li role="presentation" class="col-md-2"><a href="/admin/order">Orders</a></li>
                             <li role="presentation" class="col-md-3"><a href="/admin/reservations">Reservations</a></li>
                             <li role="presentation" class="col-md-2"><a href="/admin/users">Users</a></li>
                         </ul>

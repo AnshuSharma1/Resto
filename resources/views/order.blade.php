@@ -103,7 +103,7 @@
              @endforeach
         </div>
     </div>
-    {{--<div class="menu">
+   <div class="menu">
         <h2 class="text-center menu-type">Mains</h2>
         <hr style="width: 40%; border-color: black;">
         <br>
@@ -114,9 +114,10 @@
                 <h4 class="item-head">{{ $item->name }}</h4>
                 {{ $item->description }}
                 <p style="margin: 10px 0; ">{{ $item->price }}</p>
-                <button type="button" class="btn mains-btn" >
-                    <i class="fa fa-shopping-bag" aria-hidden="true" ></i>
-                </button>
+                <a href="{{route('cart.edit',$item->id)}}" type="button" class="btn mains-btn">
+                    <span style="color: white;font-weight: bold;">Add to cart &nbsp</span>
+                    <i class="fa fa-shopping-bag" aria-hidden="true" style="color: white;"></i>
+                </a>
                 &nbsp
                 <br>
                 <hr class="dot">
@@ -124,6 +125,6 @@
                 @endif
              @endforeach
         </div>
-    </div>--}}
+    </div>
     @include('footer')
 @endsection

@@ -48,9 +48,10 @@ class OrderController extends Controller
      * @param  \Resto\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function show(Order $order)
+    public function show()
     {
-        //
+        $orders = Order::all();
+        return view('admin-order')->with('orders',$orders);
     }
 
     /**

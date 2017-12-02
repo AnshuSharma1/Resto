@@ -30,14 +30,15 @@ class User extends Authenticatable
     /**
      * @return array
      */
-    public function orders(){
-
-         $this->hasMany(Order::class);
-
-    }
 
     public function address()
     {
         return $this->hasMany(Address::class);
     }
+
+    public function orders()
+    {
+        return $this->hasMany('Resto\Order');
+    }
+
 }

@@ -6,37 +6,26 @@
     <div class="col-sm-6 col-sm-offset-3">
         <h3>Shipping Info</h3>
         <br>
-        {!! Form::open(['route' => 'address.store', 'method' => 'post']) !!}
-
-        <div class="form-group">
-            {{ Form::label('addressline', 'Address Line') }}
-            {{ Form::text('addressline', null, array('class' => 'form-control')) }}
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('city', 'City') }}
-            {{ Form::text('city', null, array('class' => 'form-control')) }}
-        </div>
-        <div class="form-group">
-            {{ Form::label('state', 'State') }}
-            {{ Form::text('state', null, array('class' => 'form-control')) }}
-        </div>
-        <div class="form-group">
-            {{ Form::label('zip', 'Zip') }}
-            {{ Form::text('zip', null, array('class' => 'form-control')) }}
-        </div>
-        <div class="form-group">
-            {{ Form::label('country', 'Country') }}
-            {{ Form::text('country', null, array('class' => 'form-control')) }}
-        </div>
-        <div class="form-group">
-            {{ Form::label('phone', 'Phone') }}
-            {{ Form::text('phone', null, array('class' => 'form-control')) }}
-        </div>
-
-        {{ Form::submit('Proceed to Payment', array('class' => 'btn btn-success')) }}
-
-        {!! Form::close() !!}
+        <form method="POST" action="{{ route('checkout.store') }}">
+            {{ csrf_field() }}
+            <label>Name</label> 
+            <input type="text" name="name" class="form-control">
+            <br>
+            <label>Phone No</label> 
+            <input type="number" name="phone" class="form-control">
+            <br>
+            <label>Address</label> 
+            <textarea class="form-control" name="address" rows="5" cols="30">
+            </textarea>
+            <br>
+            <label>Delivery Type</label>
+             <select name="deltype" class="form-control">
+                <option value="pickup">Pickup</option>
+                <option value="home delivery">Home Delivery</option>
+            </select>
+            <br>
+            <button class="btn btn-success" type="submit">Place the Order</button>
+        </form>
     </div>
 </div>
 

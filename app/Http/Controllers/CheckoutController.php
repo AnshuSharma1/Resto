@@ -19,6 +19,15 @@ class CheckoutController extends Controller
     public function store(Request $request)
     {
 
+        //Validate the request
+
+        $this->validate($request,[
+            'phone' => 'required|digits:10',
+            'name' => 'required',
+            'address' => 'required',
+        ]);
+
+
         $cartDetails = Cart::content();
 
         Shoppingcart::truncate();

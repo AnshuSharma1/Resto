@@ -2,6 +2,7 @@
 @section('content')
 <div class="row">
     <div class="col-md-6 col-md-offset-3" style="padding: 30px;">
+     @if(Cart::subtotal()!=0)
     <table>
         <thead>
         <tr>
@@ -40,6 +41,9 @@
     </table>
     <br>
     <a class="btn btn-primary" href="{{ route('checkout.shipping') }}">Checkout</a>
+    @else
+    <h3> NO ITEMS IN THE CART!</p>
+    @endif
 </div>
 </div>
 @endsection

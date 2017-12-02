@@ -33,19 +33,20 @@
                     TOTAL : {{ $order->total }}
                     <br>
                     <hr>
-                    @foreach($order->cart as $item)
+                        @foreach($order->cart as $item)
 
-                    PRODUCT : {{ $item['product'] }} <br>
-                    QUANTITY : {{ $item['qty'] }} <br>
-                    PRICE  : {{ $item['price'] }} <br>
+                        PRODUCT : {{ $item['product'] }} <br>
+                        QUANTITY : {{ $item['qty'] }} <br>
+                        PRICE  : {{ $item['price'] }} <br>
 
-                    @endforeach
+                        @endforeach
 
-                    @endforeach
-
-                    </p>
-
+                    <br>
                     
+                    @endforeach
+                    </p>
+                    <a href="{{ route('cart.index') }}" class="btn btn-success">Go to the cart</a>
+                    <a href="{{ route('order') }}" class="btn btn-warning">Add items to cart</a>
                 </div>
             </div>
         </div>

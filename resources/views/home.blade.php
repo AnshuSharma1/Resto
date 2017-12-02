@@ -14,9 +14,38 @@
                         </div>
                     @endif
 
-                    You are logged in as a USER
-                     {{--   @component('components.who')
-                        @endcomponent--}}
+                    You are logged in  as a user!
+
+                    <p>
+
+                    @foreach($orders as $order)
+
+                    NAME : {{ $order->name }}
+                    <br>
+                    ADDRESS : {{ $order->address }}
+                    <br>
+                    PHONE : {{ $order->phone }}
+                    <br>
+                    SUBTOTAL : {{ $order->subtotal }}
+                    <br>
+                    TAX : {{ $order->tax }}
+                    <br>
+                    TOTAL : {{ $order->total }}
+                    <br>
+                    <hr>
+                    @foreach($order->cart as $item)
+
+                    PRODUCT : {{ $item['product'] }} <br>
+                    QUANTITY : {{ $item['qty'] }} <br>
+                    PRICE  : {{ $item['price'] }} <br>
+
+                    @endforeach
+
+                    @endforeach
+
+                    </p>
+
+                    
                 </div>
             </div>
         </div>

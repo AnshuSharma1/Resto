@@ -21,6 +21,9 @@ class CreateOrdersTable extends Migration
             $table->text('address');
             $table->string('name');
             $table->integer('phone');
+            $table->integer('subtotal');
+            $table->float('tax');
+            $table->float('total');
         });
     }
 

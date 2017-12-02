@@ -38,10 +38,15 @@ class CheckoutController extends Controller
         $order->address = $request->input('address');
         $order->name = $request->input('name');
         $order->phone = $request->input('phone');
+        $order->subtotal = Cart::subtotal();
+        $order->tax = Cart::tax();
+        $order->total = Cart::total();
+        $total = Cart::total();
+
         Auth::user()->orders()->save($order);
 
         Cart::destroy();
         
-    	return 'Orde Placed! Delivery in max 4 hours!';
+    	return view('checkout',compact('cartitems','total'));
     }
 }

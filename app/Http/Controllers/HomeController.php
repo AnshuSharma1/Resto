@@ -1,6 +1,7 @@
 <?php
 
 namespace Resto\Http\Controllers;
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
 
@@ -23,6 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $orders = Auth::user()->orders;
+        $orders->transform(function($order,$key){
+            $order->cart = unserialize($order->cart);
+            return $order;
+        });
+        return view('home',['orders' => $orders]);
     }
 }

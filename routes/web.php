@@ -28,8 +28,11 @@ Route::get('/reservations', function () {
 
 });
 Route::post('/reservations', 'ReservationController@create');
+Route::post('/contact', 'ContactController@create');
+
 
 Route::get('/order','OrderController@index')->name('order');
+
 
 Auth::routes();
 
@@ -41,6 +44,7 @@ Route::get('/admin/menu', 'MenuitemController@index')->name('admin.menu');
 Route::post('/admin/menu', 'MenuitemController@store')->name('admin.menu.submit');
 Route::get('/admin/reservations','ReservationController@index')->name('admin.reservations');
 Route::get('/admin/order','OrderController@show')->name('admin.order');
+Route::get('/admin/feedback','ContactController@index')->name('admin.contact');
 Route::get('/admin/users','Auth\RegisterController@index')->name('admin.users');
 Route::resource('/cart','CartController');
 

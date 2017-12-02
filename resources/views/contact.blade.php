@@ -48,11 +48,11 @@
 @endsection
 
 @section('content')
-    <div class="gmap row text-center" style="color: black; margin-bottom: 5em;">
+    <div class="row text-center" style="color: black; margin-bottom: 5em;">
         <h2 style="margin: 40px 0 20px 0;">OUR &nbspLOCATION</h2>
         <hr style="width: 30%; border-color: black; margin-bottom: 5em;">
         <div style="width: 60%; margin:  auto;" >
-            <div id="googleMap" style="width:100%;height:450px;"></div>
+            SOME GOOD PLACE
         </div>
     </div>
     <div class="reach row text-center" style="color: black;">
@@ -96,22 +96,23 @@
         <div style="margin: 10px 0 50px 0; font-size: 18px; letter-spacing: 2px;">
             Email us at xyz@gmail.com , abc@yahoo.com
         </div>
-        <form action="">
+        <form action="#" method="POST">
+            {{ csrf_field() }}
             <div class="row">
                 <div class="col-md-6">
-                    <input type="text" placeholder="Your Name" name="cname" class="form-control" style="color: black;">
+                    <input type="text" placeholder="Your Name" name="name" class="form-control" style="color: black;" required>
                 </div>
                 <div class="col-md-6">
-                    <input type="email" placeholder="Your Email" name="cmail" class="form-control">
+                    <input type="email" placeholder="Your Email" name="email" class="form-control" required>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-md-12">
-                    <textarea name="ctext" id="ctext" cols="30" rows="10" class="form-control" placeholder="Your Message"></textarea>
+                    <textarea name="message" id="ctext" cols="30" rows="10" class="form-control" placeholder="Your Message" required></textarea>
                 </div>
             </div>
-            <button class="btn btn-primary" style="margin-top: 30px; padding:10px 50px 10px 50px;">
+            <button class="btn btn-primary" type="Submit" style="margin-top: 30px; padding:10px 50px 10px 50px;">
                 Submit
             </button>
         </form>
@@ -119,15 +120,3 @@
     @include('footer')
 @endsection
 
-@section('script')
-    <script>
-        function myMap() {
-            var mapProp= {
-                center:new google.maps.LatLng(23.1781761,80.0232782),
-                zoom:5,
-            };
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKQWJQu-2na3P9giryYcmHVdoVHMueJIA&callback=myMap"></script>
-@endsection

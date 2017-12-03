@@ -28,7 +28,7 @@ Route::get('/reservations', function () {
 
 });
 Route::post('/reservations', 'ReservationController@create');
-Route::post('/contact', 'ContactController@create');
+Route::post('/contact', 'ContactController@create')->name('contact.post');
 
 
 Route::get('/order','OrderController@index')->name('order');

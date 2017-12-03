@@ -19,6 +19,11 @@
 @endsection
 
 @section('jumbo')
+@if (Request::isMethod('post'))
+        <h3 class="text-center alert alert-success">
+           {{ $done }}
+        </h3>
+@endif
     <div id="jumbo">
         <div id="jumbo" style="padding: 60px;" class="text-center">
             <div style="margin-top:40px; color: white;">

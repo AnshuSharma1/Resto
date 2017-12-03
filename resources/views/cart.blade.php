@@ -43,6 +43,10 @@
     <a class="btn btn-primary" href="{{ route('checkout.shipping') }}">Checkout</a>
     @else
     <h3> NO ITEMS IN THE CART!</p>
+    <br>
+    <a href="{{ route('order') }}" class="btn btn-warning">
+        Add items to the cart
+    </a>
     @endif
 </div>
 </div>

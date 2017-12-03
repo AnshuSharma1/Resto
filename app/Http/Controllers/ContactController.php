@@ -7,11 +7,7 @@ use Resto\Contact;
 
 class ContactController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:admin');
-    }
-
+    
     public function index()
     {
         $con_items = Contact::all();
@@ -28,6 +24,8 @@ class ContactController extends Controller
 
         $con->save();
 
-        return redirect('/order');
+        $done = "Your form is submitted";
+
+        return view('/contact',compact('done'));
     }
 }

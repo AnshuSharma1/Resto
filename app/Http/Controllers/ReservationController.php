@@ -7,11 +7,7 @@ use Illuminate\Http\Request;
 
 class ReservationController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:admin');
-    }
-
+    
     /**
      * Display a listing of the resource.
      *
@@ -24,7 +20,7 @@ class ReservationController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new resource. 
      *
      * @return \Illuminate\Http\Response
      */
@@ -44,7 +40,9 @@ class ReservationController extends Controller
 
         $res->save();
 
-        return redirect('/reservations');
+        $done = "Your form is submitted";
+
+        return view('/reservation',compact('done'));
     }
 
     /**

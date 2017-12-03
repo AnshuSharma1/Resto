@@ -26,8 +26,6 @@ class ReservationController extends Controller
      */
     public function create(Request $request)
     {
-        // Validate the request...
-
         $res = new Reservation();
 
         $res->name = $request->name;

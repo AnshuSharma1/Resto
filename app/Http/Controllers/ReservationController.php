@@ -13,6 +13,12 @@ class ReservationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
+    
     public function index()
     {
         $res_items = Reservation::all();
@@ -35,6 +41,7 @@ class ReservationController extends Controller
         $res->time_slot = $request->time_slot;
         $res->res_date = $request->res_date;
         $res->place = $request->place;
+        $res->delivered = 0;
 
         $res->save();
 
@@ -83,9 +90,19 @@ class ReservationController extends Controller
      * @param  \Resto\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Reservation $reservation)
+    public function update(Request $request, $rid)
     {
-        //
+        $reservation = Reservation::find($rid);
+        if ($request->has('delivered')) {
+            $reservation->delivered = $request->delivered;
+        }
+        else{
+            $reservation->delivered="0";
+        }
+        
+        $reservation->save();
+
+        return back();
     }
 
     /**

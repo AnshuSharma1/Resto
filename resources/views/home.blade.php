@@ -26,6 +26,8 @@
                     <br>
                     PHONE : {{ $order->phone }}
                     <br>
+                    DELIVERY TYPE : {{ $order->dtype }}
+                    <br>
                     SUBTOTAL : {{ $order->subtotal }}
                     <br>
                     TAX : {{ $order->tax }}

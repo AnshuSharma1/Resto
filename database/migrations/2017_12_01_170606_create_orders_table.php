@@ -10,7 +10,7 @@ class CreateOrdersTable extends Migration
      * Run the migrations.
      *
      * @return void
-     */
+     */ 
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
@@ -21,9 +21,9 @@ class CreateOrdersTable extends Migration
             $table->text('address');
             $table->string('name');
             $table->integer('phone');
-            $table->integer('subtotal');
-            $table->float('tax');
-            $table->float('total');
+            $table->float('total'); 
+            $table->text('dtype');
+            $table->tinyInteger('delivered');
         });
     }
 

@@ -28,10 +28,10 @@
             </textarea>
             <br>
             <label>Delivery Type</label>
-             <select name="deltype" class="form-control">
+             <select name="dtype" class="form-control">
                 <option value="pickup">Pickup</option>
-                <option value="home delivery">Home Delivery</option>
-            </select>
+                <option value="homedelivery">Home Delivery</option>
+            </select> 
             <br>
             <button class="btn btn-success" type="submit">Place the Order</button>
         </form>

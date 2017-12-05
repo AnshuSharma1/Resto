@@ -47,9 +47,9 @@ class CheckoutController extends Controller
         $order->address = $request->input('address');
         $order->name = $request->input('name');
         $order->phone = $request->input('phone');
-        $order->subtotal = Cart::subtotal();
-        $order->tax = Cart::tax();
+        $order->dtype = $request['dtype'];
         $order->total = Cart::total();
+        $order->delivered = 0;
         $total = Cart::total();
 
         Auth::user()->orders()->save($order);

@@ -14,6 +14,8 @@ class OrderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    
     public function index()
     {
         $items = Menuitem::all();
@@ -62,7 +64,7 @@ class OrderController extends Controller
      */
     public function edit(Order $order)
     {
-        //
+        
     }
 
     /**
@@ -72,9 +74,19 @@ class OrderController extends Controller
      * @param  \Resto\Order  $order
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Order $order)
+    public function update(Request $request, $orderid)
     {
-        //
+        $order = Order::find($orderid);
+        if ($request->has('delivered')) {
+            $order->delivered = $request->delivered;
+        }
+        else{
+            $order->delivered="0";
+        }
+        
+        $order->save();
+
+        return back();
     }
 
     /**
@@ -85,6 +97,6 @@ class OrderController extends Controller
      */
     public function destroy(Order $order)
     {
-        //
+        
     }
 }

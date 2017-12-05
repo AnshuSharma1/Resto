@@ -3,6 +3,7 @@
 namespace Resto\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Resto\User;
 
 class AdminController extends Controller
 {
@@ -24,6 +25,12 @@ class AdminController extends Controller
     public function index()
     {
         return view('admin');
+    }
+
+    public function users()
+    {
+        $users = User::all();
+        return view('admin-users')->with('users',$users);
     }
 
 }
